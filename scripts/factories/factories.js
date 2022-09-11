@@ -62,9 +62,6 @@ function recipeFactory(recipe) {
         {
             const ingredient1 = document.createElement("div");
             ingredient1.className = "ingredients";
-            //if (ingredient.unit == null) {ingredient.unit = "";} else {ingredient.unit=ingredient.unit;};
-            //ingredient1.textContent = ingredient.ingredient + ': ' + ingredient.quantity + ingredient.unit;
-            //ingredient1.textContent = ingredient.ingredient;
             ingredients1.appendChild(ingredient1);
 
             const ingredient_txt = document.createElement("div");
@@ -122,6 +119,7 @@ function recipeFactory(recipe) {
 }
 
 function getAppareilCard (appliance) {
+    //la fonction permet de sélectionner les tags
 
     const appareil1 = document.createElement("div");
     appareil1.className = "appareil";
@@ -137,6 +135,7 @@ function getAppareilCard (appliance) {
 
 
 function getUstensilCard (ustensil) {
+    //la fonction permet de sélectionner les tags
 
     const ustensil1 = document.createElement("div");
     ustensil1.className = "ustensil";
@@ -152,7 +151,7 @@ function getUstensilCard (ustensil) {
 
 
 function getIngredientCard(ingredient) {
-    
+    //la fonction permet de sélectionner les tags
     const ingredient1 = document.createElement("div");
     ingredient1.className = "ingredient";
     ingredient1.textContent = ingredient;
