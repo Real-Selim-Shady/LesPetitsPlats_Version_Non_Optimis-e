@@ -225,28 +225,6 @@ function filterBySearch()
         filteredRecipes = newFilteredRecipes;
     }
 
-    /*
-    if (rechercher.length>=3) 
-    {   
-        //Version optimisée
-        filteredRecipes = 
-        filteredRecipes.filter((recipe) => 
-        {
-            return (
-                (recipe.ingredients.filter
-                ( ingredient => 
-                    
-                    ingredient.ingredient.toLowerCase().includes(rechercher)
-
-                )
-
-                ).length >0 ||
-                recipe.name.toLowerCase().includes(rechercher)||
-                recipe.description.toLowerCase().includes(rechercher)
-            );
-        });
-    }
-    */
 
 }
 
@@ -647,8 +625,5 @@ window.onload = function() {
     afficherIngredients(littleIngredients);
     afficherUstensils(littleUstensils);
     afficherAppareils(littleAppareils);
-
-
-
 
 };
